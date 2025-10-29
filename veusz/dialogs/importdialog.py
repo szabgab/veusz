@@ -40,7 +40,7 @@ class ImportTab(qt.QWidget):
     """Tab for a particular import type."""
 
     resource = ''
-    filetypes = ()       # list of file types handled
+    filetypes: tuple[str,...] = ()       # list of file types handled
     filefilter = None    # name of filter for types for open dialog
 
     def __init__(self, importdialog, *args):
