@@ -68,7 +68,7 @@ class ImportPlugin:
 
     # set these to get focus if a file is selected with these extensions
     # include the dot in the extension names
-    file_extensions = set()
+    file_extensions: set[str] = set()
 
     def __init__(self):
         """Override this to declare a list of input fields if required."""
