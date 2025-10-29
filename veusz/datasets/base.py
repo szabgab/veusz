@@ -48,9 +48,9 @@ class DatasetConcreteBase(DatasetBase):
     dstype = 'Dataset'
 
     # list of columns in dataset (if any)
-    columns = ()
+    columns: tuple[str, ...] = ()
     # use descriptions for columns
-    column_descriptions = ()
+    column_descriptions: tuple[str, ...] = ()
 
     # can values be edited
     editable = False

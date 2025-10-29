@@ -34,8 +34,8 @@ class Dataset1DBase(DatasetConcreteBase):
 
     # number of dimensions the dataset holds
     dimensions = 1
-    columns = ('data', 'serr', 'nerr', 'perr')
-    column_descriptions = (
+    columns: tuple[str, ...] = ('data', 'serr', 'nerr', 'perr')
+    column_descriptions: tuple[str, ...] = (
         _('Data'),
         _('Sym. errors'),
         _('Neg. errors'),
