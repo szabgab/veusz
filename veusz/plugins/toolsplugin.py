@@ -45,7 +45,7 @@ class ToolsPluginException(RuntimeError):
 class ToolsPlugin:
     # the plugin will get inserted into the menu in a hierarchy based on
     # the elements of this tuple
-    menu = (_('Base plugin'),)
+    menu: tuple[str, ...] = (_('Base plugin'),)
     name = 'Base plugin'
 
     author = ''
