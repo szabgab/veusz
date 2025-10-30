@@ -478,7 +478,7 @@ class DatasetPlugin:
 
     # the plugin will get inserted into the menu in a hierarchy based on
     # the elements of this tuple
-    menu = ('Base plugin',)
+    menu: tuple[str, ...] = ('Base plugin',)
     name = 'Base plugin'
 
     author = ''
